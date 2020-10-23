@@ -2,13 +2,20 @@
   "expo": {
     "name": "saynaQr",
     "slug": "saynaQr",
+    "sdkVersion": "39.0.0",
+    
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#44cbef"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,10 +24,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "nothing"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "android": {
+      "package": "com.bysayna.SaynaQr"
+      
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
